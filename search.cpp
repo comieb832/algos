@@ -3,6 +3,7 @@
 #include <vector>
 #include <string>
 
+
 using namespace std;
 
 /**
@@ -66,4 +67,16 @@ int main()
    cout<<endl<<"Program \"search it\" is now finished."<<endl<<endl;
 
     return 0;
+}
+
+int linearSearch(auto Data, auto key)
+{
+	for (int i = 0; i < Data.size(); i++)
+	{
+		if (Data[i] == key)// we found it  
+		{
+			return i;// return its location
+		}
+	}//end for
+	return -1;// element not found 
 }
